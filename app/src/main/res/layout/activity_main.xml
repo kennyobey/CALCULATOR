@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+        android:background="@android:color/black"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+
+    <TextView
+            android:id="@+id/tvExpression"
+            android:text=""
+            android:textDirection="ltr"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:textSize="40sp"
+            android:ellipsize="end"
+            android:textColor = "#ffffffff"
+            android:layout_gravity="start"
+             android:singleLine="true"/>
+
+    <TextView
+            android:id="@+id/tvresult"
+            android:text=""
+            android:textDirection="ltr"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:textColor = "#ffffffff"
+            android:layout_gravity="start"
+            android:ellipsize="end"
+            android:textSize="30sp"
+            android:singleLine="true"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+            <TextView android:id="@+id/tvCE"
+                      style="@style/actionbuttonstyle"
+                      android:text="@string/ce"/>
+
+            <TextView android:id="@+id/tvopen"
+                      style="@style/actionbuttonstyle"
+                      android:text="@string/open"/>
+
+            <TextView  android:id="@+id/tvclose"
+                       style="@style/actionbuttonstyle"
+                       android:text="@string/close"/>
+
+            <TextView android:id="@+id/tvdivide"
+                      style="@style/actionbuttonstyle"
+                      android:text="@string/div"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal"
+        android:layout_gravity="center">
+            <TextView android:id="@+id/seven"
+                      style="@style/numberbuttonstyle"
+                      android:text="@string/seven"/>
+
+            <TextView android:id="@+id/tveight"
+                      style="@style/numberbuttonstyle"
+                      android:text="@string/eight"/>
+
+            <TextView  android:id="@+id/tvnine"
+                       style="@style/numberbuttonstyle"
+                       android:text="@string/nine"/>
+
+            <TextView android:id="@+id/tvmul"
+                      style="@style/actionbuttonstyle"
+                      android:text="@string/mult"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+            <TextView android:id="@+id/tvfour"
+                      style="@style/numberbuttonstyle"
+                      android:text="@string/four"/>
+
+            <TextView android:id="@+id/tvfive"
+                      style="@style/numberbuttonstyle"
+                      android:text="@string/five"/>
+
+            <TextView  android:id="@+id/tvsix"
+                       style="@style/numberbuttonstyle"
+                       android:text="@string/six"/>
+
+            <TextView android:id="@+id/minus"
+                      style="@style/actionbuttonstyle"
+                      android:text="@string/minus"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+
+            <TextView android:id="@+id/tvone"
+                      style="@style/numberbuttonstyle"
+                      android:text="@string/one"/>
+
+            <TextView android:id="@+id/tvtwo"
+                      style="@style/numberbuttonstyle"
+                      android:text="@string/two"/>
+
+            <TextView  android:id="@+id/tvthree"
+                       style="@style/numberbuttonstyle"
+                       android:text="@string/three"/>
+
+            <TextView android:id="@+id/plus"
+                      style="@style/actionbuttonstyle"
+                      android:text="@string/plus"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+            
+            <TextView android:id="@+id/tvdot"
+                    style="@style/numberbuttonstyle"
+                      android:text="@string/dot"/>
+
+            <TextView android:id="@+id/tvzero"
+                    style="@style/numberbuttonstyle"
+                      android:text="@string/zero"/>
+
+            <ImageView  android:id="@+id/tvback"
+                    style="@style/numberbuttonstyle"
+                      android:text="@string/back"
+            android:src="@drawable/ic_backspace_black_24dp"
+            android:scaleType="center"/>
+
+            <TextView android:id="@+id/equals"
+                    style="@style/actionbuttonstyle"
+                      android:text="@string/equal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
